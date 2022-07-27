@@ -1,0 +1,45 @@
+.floatingButtonWrapper {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+}
+
+.hiddenCompWrapper {
+  position: absolute;
+  top: -150%;
+  left: -100%;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+
+.actionButton {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.7));
+}
+
+.actionButton span {
+  display: block;
+}
+
+.actionButton svg{
+  width: 35px;
+  height: 35px;
+  fill: var(--secondaryColor);
+  stroke: #fff;
+  stroke-width: 25px;
+}
+
+.actionButton:hover {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .actionButton svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+

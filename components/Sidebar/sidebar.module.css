@@ -1,0 +1,4 @@
+.sideBarWrapper {
+  width: 150px;
+  min-height: calc(100vh - 70px);
+}

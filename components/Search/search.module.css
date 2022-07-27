@@ -1,0 +1,132 @@
+.searchBarWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.searchWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.inputWrapper {
+  border: solid 1px var(--secondaryColor);
+  border-radius: 20px;
+  padding: 5px;
+  margin: 4px;
+  min-width: 500px;
+  max-width: 600px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: var(--primaryColor);
+}
+
+.inputWrapper input {
+  width: 90%;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.closeButton {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.closeButton svg {
+  fill: grey;
+}
+
+.closeButton:hover svg {
+  fill: var(--secondaryColor);
+}
+
+.searchButton {
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.searchButton:hover {
+  background-color: #bdc3c7;
+}
+
+.searchResultWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  min-width: 500px;
+  max-width: 600px;
+  max-height: 400px;
+  left: 0;
+  z-index: 1000;
+  border-radius: 10px;
+  background-color: var(--primaryColor);
+  margin-right: 50px;
+  overflow: auto;
+}
+
+.searchResultWrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+.searchResultWrapper::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.resultItem {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 5px 10px;
+  padding: 5px;
+  border-bottom: solid 1px #bdc3c7;
+}
+
+.resultItem a {
+  color: grey;
+}
+
+.resultItem a:hover {
+  color: #e74c3c;
+}
+
+@media screen and (max-width: 800px) {
+  .searchBarWrapper {
+    margin-right: 0px;
+    justify-content: center;
+  }
+
+  .searchContainer {
+    width: 100%;
+    margin: 0px 10px;
+  }
+
+  .searchResultWrapper {
+    min-width: 100px;
+    max-width: 600px;
+  }
+
+  .searchWrapper {
+    margin: 0px auto;
+    min-width: 100%;
+    max-width: 500px;
+    flex: 0 0 auto;
+  }
+
+  .inputWrapper {
+    width: 90%;
+    min-width: 100px;
+  }
+}

@@ -1,0 +1,14 @@
+.containerWrapper {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: [line1] 80px [line2] auto [line3];
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .containerWrapper {
+    grid-template-rows: [line1] 50px [line2] auto [line3];
+  }
+}

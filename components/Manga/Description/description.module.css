@@ -1,0 +1,72 @@
+.descriptionContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px;
+}
+
+.descriptionContainer > div {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 10px 0px;
+}
+
+.descriptionContainer .paragraphHeading {
+  color: gray;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.descriptionContainer > div p {
+  font-size: 18px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+
+.tag {
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 1px var(--secondaryColor);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  color: var(--secondaryColor);
+  margin: 5px 5px;
+}
+
+.tag p {
+  font-weight: 400 !important;
+  margin: 5px;
+  flex: 0 0 auto;
+}
+
+.tagWrapper {
+  display: flex;
+  flex-flow: row wrap !important;
+  align-items: space-around;
+}
+
+.altTitleWrapper p {
+  margin: 10px 5px;
+}
+
+.relatedMangaContainer{
+  display: flex;
+  flex-flow: column nowrap !important;
+  margin-top: 20px;
+  flex: 0 0 auto;
+}
+
+.relatedMangaHeading {
+  font-size: 25px;
+  color: var(--secondaryColor);
+  font-weight: bold;
+}
+
+.relatedMangaWrapper {
+  flex: 0 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow-x: auto;
+  padding: 10px;
+}

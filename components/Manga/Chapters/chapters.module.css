@@ -1,0 +1,33 @@
+.chaptersWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 10px;
+}
+
+.chapterHeadingWrapper {
+  color: grey;
+  font-size: 15px;
+}
+
+.chapterCountWrapper {
+  margin-left: 10px;
+  color: gray;
+}
+
+.chapterItemWrapper {
+  margin: 10px;
+}
+
+.chapterItemWrapper a {
+  flex: 0 0 auto;
+  margin: 5px 0px;
+  color: #57606f;
+  padding: 5px;
+  border: solid 1px transparent;
+  border-radius: 5px;
+}
+
+.chapterItemWrapper a:hover {
+  color: #8e44ad;
+  border: solid 1px var(--secondaryColor);
+}
