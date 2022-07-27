@@ -9,7 +9,7 @@ import type { Manga } from '../../types/mangaType'
 import { changeMangaList, addManga } from '../../stores/mangaStore/actions'
 
 
-const Manga = () => {
+const MangaComp = () => {
 
   const dispatch = useDispatch()
   const router = useRouter()
@@ -66,4 +66,4 @@ const Manga = () => {
   )
 }
 
-export default Manga
+export default MangaComp
