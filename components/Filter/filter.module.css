@@ -1,0 +1,73 @@
+.controlWrapper {
+  border-top: solid 1px grey;
+  padding-top: 10px;
+}
+
+.controlWrapper button p {
+  font-size: 16px;
+  color: var(--secondaryColor);
+}
+
+.checkBoxWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.checkBoxWrapper span {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5px 0px;
+  margin: 5px 10px;
+}
+
+.checkBoxWrapper span input {
+  margin-right: 5px;
+}
+
+.checkBoxWrapper span label {
+  color: grey;
+}
+
+.checkBoxWrapper span .active {
+  color: green;
+}
+
+.checkBoxWrapper input:checked {
+  background-color: var(--secondaryColor);
+}
+
+.checkBoxWrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+.checkBoxWrapper::-webkit-scrollbar-thumb {
+  width: 5px;
+  height: 5px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.applyButtonWrapper {
+  display: flex;
+  flex: row nowrap;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.applyButtonWrapper button {
+  border: solid 1px var(--secondaryColor);
+  border-radius: 5px;
+  color: var(--secondaryColor);
+  padding: 5px;
+  font-size: 15px;
+}
+
+.applyButtonWrapper button:hover {
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+}
+

@@ -1,0 +1,31 @@
+.menuItem {
+  padding: 5px 10px;
+  margin: 15px 5px;
+  border-bottom: solid 1px grey;
+}
+
+.active p {
+  color: black !important;
+}
+
+.menuItem button {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 5px;
+  flex: 0 0 auto;
+}
+
+.menuItem span {
+  flex: 0 0 auto;
+}
+
+.menuItem p {
+  margin: 0 5px;
+  font-family: monospace;
+  font-size: 18px;
+  color: grey;
+}
+
+
+
+

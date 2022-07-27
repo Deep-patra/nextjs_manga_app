@@ -1,0 +1,55 @@
+.favouriteButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.readButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.favouriteButton, .readButton {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: var(--secondaryColor);
+}
+
+.favouriteButton svg {
+  stroke: var(--secondaryColor);
+  fill: var(--primaryColor);
+}
+
+.readButton svg {
+  stroke: var(--secondaryColor);
+  fill: var(--primaryColor);
+}
+
+.readButton:hover svg {
+  fill: var(--secondaryColor);
+}
+
+.fav {
+  color: green;
+}
+
+.fav svg {
+  fill: green !important;
+  stroke: green;
+}
+
+.buttonWrapper {
+  border-radius: 10px;
+  border: solid 1px var(--secondaryColor);
+  background-color: var(--primaryColor);
+  overflow: hidden;
+  padding: 5px;
+}
+
+.buttonWrapper button {
+  margin: 5px;
+}
+
+.buttonWrapper button svg {
+  margin: 3px;
+}

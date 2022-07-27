@@ -1,0 +1,20 @@
+.favouriteWrapper {
+  grid-row: line2 / line3;
+  grid-column: 3 / span 10;
+}
+
+.noFavouriteWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .favouriteWrapper {
+    grid-row: line2 / line3;
+    grid-column: 1 / span 13;
+  }
+}

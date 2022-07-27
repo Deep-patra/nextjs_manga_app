@@ -1,0 +1,36 @@
+.relatedMangaContainer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.relatedMangaHeading {
+  font-size: 25px;
+  color: var(--secondaryColor);
+  margin-left: 10px;
+}
+
+.relatedMangaWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  align-items: center;
+  padding: 10px;
+}
+
+.relatedMangaWrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.relatedMangaWrapper::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 10px !important;
+  border-radius: 10px;
+  background-color: #bdc3c7;
+}
+
+.relatedMangaWrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #7f8c8d;
+}
+
