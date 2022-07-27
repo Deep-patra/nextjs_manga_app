@@ -5,6 +5,12 @@ const nextConfig = {
   images: {
     domains: ['uploads.mangadex.org'],
   },
+  rewrites: [
+    {
+      source: '/api/cover/:path*',
+      destination: 'https://api.mangadex.org/cover/:path*'
+    }
+  ],
   experimental: {
     images: {
       remotePatterns: [
