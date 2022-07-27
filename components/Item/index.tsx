@@ -58,6 +58,9 @@ const Item: FC<ItemProps> = ({ data }) => {
         const response = await fetch(`https://api.mangadex.org/cover/${cover_art_ID.id}`, {
           mode: 'cors',
           credentials: 'include',
+          headers: {
+            'Access-Control-Allow-Origin': "*",
+          }
         })
           .then(res => res.json())
           .then(res => {
