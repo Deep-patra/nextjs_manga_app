@@ -54,12 +54,8 @@ const Item: FC<ItemProps> = ({ data }) => {
           if (item.type === "cover_art") return true
           return false
         })
-  
-<<<<<<< HEAD
+
         const response = await fetch(`/api/cover/${cover_art_ID.id}`, {
-=======
-        const response = await fetch(`https://api.mangadex.org/cover/${cover_art_ID.id}`, {
->>>>>>> 30d751c1f1d194aec065be2d32b36718e7ac33af
           mode: 'cors',
           credentials: 'include',
         })
