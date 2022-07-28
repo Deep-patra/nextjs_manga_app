@@ -16,7 +16,9 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   const params = context.params
   const { id } = params as any
 
-  const response = await fetch(`http://localhost:5000/api/manga/${id}/aggregate`)
+  const host = context.req.headers.host
+
+  const response = await fetch(`http://${host}/api/manga/${id}/aggregate`)
 
   const res = await response.json()
 

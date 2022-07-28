@@ -339,7 +339,7 @@ const ChapterPages: FC<Props> = ({ chapter, data }) => {
   useEffect(() => {
     const fetchPages = async (chapterId: string): Promise<any> => {
       const response = await fetch(
-        `https://api.mangadex.org/at-home/server/${chapterId}`,
+        `/api/pages/${chapterId}`,
         {
           mode: "cors",
           credentials: "include",
@@ -353,7 +353,9 @@ const ChapterPages: FC<Props> = ({ chapter, data }) => {
 
     if (chapter !== null) {
       fetchPages(chapter.id)
-        .then((res) => {
+        .then((response) => {
+          const res = response.data
+
           if (res.result === "ok") {
             changePage(res);
           }
