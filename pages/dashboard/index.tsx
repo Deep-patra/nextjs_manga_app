@@ -117,7 +117,7 @@ const Dashboard = () => {
     demographic.length !== 0 && (baseURL += `&${demographic}`)
     includedTag.length !== 0 && (baseURL += `&${includedTag}`)
     excludedTag.length !== 0 && (baseURL += `&${excludedTag}`)
-    console.log(baseURL)
+
 
     OFFSET.current += LIMIT.current // update the offset
     changeURL(baseURL)
